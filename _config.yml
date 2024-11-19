@@ -104,5 +104,4 @@ theme: landscape
 deploy:
   type: git
   repo: git@github.com:cjf717/hexo-2024.git
-  //也可使用https地址，如：https://github.com/Github用户名/Github用户名.github.io.git
-  branch: main
+  branch: gh-hexo-pages
