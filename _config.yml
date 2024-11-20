@@ -62,7 +62,7 @@ prismjs:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 10
+  per_page: 6
   order_by: -date
 
 # Category & Tag
@@ -97,7 +97,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: matery   # landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -105,3 +105,12 @@ deploy:
   type: git
   repo: git@github.com:cjf717/hexo-2024.git
   branch: gh-hexo-pages
+
+# 用hexo-generator-search的 Hexo 插件来做内容搜索
+search:
+  path: search.xml
+  field: post
+# 中文链接转拼音
+permalink_pinyin:
+  enable: true
+  separator: '-' # default: '-
