@@ -1,8 +1,9 @@
 ---
 title: Git版本控制工具详解笔记
-date: 2023-09-11 09:00:00
 categories: 编程
 tags: git
+abbrlink: 7729
+date: 2023-09-11 09:00:00
 ---
 
 > 说明：本笔记根据coderwhy在前端系统课《前端工程化基础》的《Git版本控制工具详解》所写笔记。

@@ -1,10 +1,11 @@
 ---
 title: python3.11安装scrapy出错的解决方法
-date: 2023-01-31 17:29:00
 categories: 编程
 tags:
   - python
   - scrapy
+abbrlink: 51681
+date: 2023-01-31 17:29:00
 ---
 
 # python3.11 安装 scrapy 出错的解决方法

@@ -1,12 +1,14 @@
 ---
 title: Hexo快速入门
-date: 2024-05-08 09:00:00
 layout: post
 categories: hexo
-tags: 
-- 入门
+tags:
+  - 入门
+abbrlink: 10594
+date: 2024-05-08 09:00:00
 ---
-欢迎使用 [Hexo](https://hexo.io/)! 更多信息请访问： [官方文档](https://hexo.io/docs/) 。If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+欢迎使用 [Hexo](https://hexo.io/)! 更多信息请访问： [官方文档](https://hexo.io/docs/) 。
+If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
 <h1><% page.title %></h1>
 

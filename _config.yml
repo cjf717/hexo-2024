@@ -15,7 +15,8 @@ timezone: 'Asia/Shanghai'
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://cjf717.github.io
 root: /hexo-2024/
-permalink: :year/:month/:day/:title/
+# permalink: :year/:month/:day/:title/
+permalink: posts/:abbrlink/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -97,7 +98,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: matery   # landscape
+theme: butterfly    # matery，landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -111,6 +112,9 @@ search:
   path: search.xml
   field: post
 # 中文链接转拼音
-permalink_pinyin:
-  enable: true
-  separator: '-' # default: '-
+# permalink_pinyin:
+#   enable: true
+#   separator: '-' # default: '-
+markdown:
+  plugins:
+    - '@renbaoshuo/markdown-it-katex'

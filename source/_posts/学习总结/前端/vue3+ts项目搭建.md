@@ -1,9 +1,12 @@
 ---
 title: VUE3+TS项目搭建规范
-date: 2023-02-08 13:01:10
 categories: 编程
-tags: [前端, VUE]
+tags:
+  - 前端
+  - VUE
 cover: prettier插件.jpg
+abbrlink: 17583
+date: 2023-02-08 13:01:10
 ---
 
 # 项目搭建规范(深入 Vue3+TypeScript 技术栈-coderwhy 大神新课)

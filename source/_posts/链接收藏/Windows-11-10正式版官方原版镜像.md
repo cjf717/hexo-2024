@@ -1,12 +1,13 @@
 ---
 title: Windows 11/10正式版官方原版镜像
-date: 2023-02-02 15:12:03
 categories: 系统
 tags:
   - windows
   - win10
   - win11
 cover: images/windows.webp
+abbrlink: 64896
+date: 2023-02-02 15:12:03
 ---
 
 ## Window 11 22H2（2023 年 01 月 17 日发布）

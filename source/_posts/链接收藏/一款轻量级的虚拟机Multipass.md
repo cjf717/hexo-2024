@@ -1,9 +1,12 @@
 ---
 title: 一款轻量级的虚拟机Multipass
-date: 2023-02-14 09:31:51
 categories: 系统
-tags: [ubuntu, 虚拟机]
+tags:
+  - ubuntu
+  - 虚拟机
 cover: Multipass官网界面.png
+abbrlink: 25951
+date: 2023-02-14 09:31:51
 ---
 
 ## 前言

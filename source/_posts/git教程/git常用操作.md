@@ -1,8 +1,9 @@
 ---
 title: git规范管理代码
-date: 2023-09-07 13:50:45
 categories: 编程
 tags: git
+abbrlink: 6828
+date: 2023-09-07 13:50:45
 ---
 
 ## git 规范管理代码

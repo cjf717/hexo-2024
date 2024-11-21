@@ -1,9 +1,10 @@
 ---
 title: MarkDown添加图片的三种方式
-date: 2023-02-01 15:37:56
 categories: 编程
 tags: markdown
-cover: https://file.crazywong.com/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg
+cover: 'https://file.crazywong.com/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg'
+abbrlink: 47128
+date: 2023-02-01 15:37:56
 ---
 
 Markdown 插入图片有三种方法，各种 Markdown 编辑器的插图方式也都包含在这三种方法之内。

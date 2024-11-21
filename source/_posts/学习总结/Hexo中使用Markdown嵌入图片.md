@@ -1,10 +1,10 @@
 ---
 title: Hexo中使用Markdown嵌入图片
+cover: images/example.png
+abbrlink: 47155
 date: 2023-02-03 17:02:14
 categories:
 tags:
-cover: images/example.png
-# cover: images/24个JavaScript循环遍历方法.png
 ---
 
 在 hexo 官司网中对[资源文件夹](https://hexo.io/zh-cn/docs/asset-folders)的说明，将`config.yml`文件中的`post_asset_folder`选项设为 true，创建新文章时自动创建一个同名文件夹。可以通过相对路径来引用它们

@@ -1,15 +1,12 @@
 ---
 title: 英特尔发布N系列处理器
-date: 2023-02-07 10:44:04
 categories: 新闻
 tags:
   - 硬件
   - intel
 cover: intel-n.webp
-# img: images/intel-n.webp
-# top: true
-# cover: true
-# coverImg: images/intel-n.webp
+abbrlink: 41380
+date: 2023-02-07 10:44:04
 ---
 
 ![](intel-n.webp)
