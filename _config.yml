@@ -111,10 +111,17 @@ deploy:
 search:
   path: search.xml
   field: post
+
 # 中文链接转拼音
 # permalink_pinyin:
 #   enable: true
 #   separator: '-' # default: '-
+
 markdown:
   plugins:
     - '@renbaoshuo/markdown-it-katex'
+
+# APlayer 播放器的 Hexo 标签插件（现已支持 MetingJS）
+# aplayer:
+#   meting: true
+#   asset_inject: false

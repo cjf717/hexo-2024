@@ -14,6 +14,12 @@ importers:
       hexo:
         specifier: ^7.3.0
         version: 7.3.0(chokidar@3.6.0)
+      hexo-abbrlink:
+        specifier: ^2.2.1
+        version: 2.2.1
+      hexo-deployer-git:
+        specifier: ^4.0.0
+        version: 4.0.0(chokidar@3.6.0)
       hexo-generator-archive:
         specifier: ^2.0.0
         version: 2.0.0
@@ -35,22 +41,6 @@ importers:
       hexo-renderer-ejs:
         specifier: ^2.0.0
         version: 2.0.0
-      hexo-server:
-        specifier: ^3.0.0
-        version: 3.0.0
-      hexo-theme-butterfly:
-        specifier: ^5.2.2
-        version: 5.2.2
-      katex:
-        specifier: ^0.16.11
-        version: 0.16.11
-    devDependencies:
-      hexo-abbrlink:
-        specifier: ^2.2.1
-        version: 2.2.1
-      hexo-deployer-git:
-        specifier: ^4.0.0
-        version: 4.0.0(chokidar@3.6.0)
       hexo-renderer-markdown-it:
         specifier: ^7.1.1
         version: 7.1.1
@@ -60,9 +50,18 @@ importers:
       hexo-renderer-stylus:
         specifier: ^3.0.1
         version: 3.0.1
+      hexo-server:
+        specifier: ^3.0.0
+        version: 3.0.0
       hexo-tag-aplayer:
         specifier: ^3.0.4
         version: 3.0.4
+      hexo-theme-butterfly:
+        specifier: ^5.2.2
+        version: 5.2.2
+      katex:
+        specifier: ^0.16.11
+        version: 0.16.11
 
 packages:
 

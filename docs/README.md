@@ -33,3 +33,13 @@ git push upstream main
 git remote add gitlab git@gitlab.com:cjf717/hexo-demo.git
 git push gitlab main
 ```
+
+## 相关文章
+### 官方文档
+官方文档 https://hexo.io/zh-cn/
+### Butterfly主题
+- github：https://github.com/jerryc127/hexo-theme-butterfly
+- 官方文档：https://butterfly.js.org/
+- gitee 官网：https://gitee.com/immyw/hexo-theme-butterfly
+### 入门文章
+《hexo+github搭建博客(超级详细版，精细入微)》，https://blog.csdn.net/victoryxa/article/details/103733655
