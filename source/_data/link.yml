@@ -1,23 +1,31 @@
-- class_name: 友情鏈接
-  class_desc: 那些人，那些事
+- class_name: 新闻IT咨询
+  class_desc: 最新IT动态
   link_list:
-    - name: Hexo
-      link: https://hexo.io/zh-tw/
-      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
-      descr: 快速、簡單且強大的網誌框架
+    - name: IT之家
+      link: https://www.ithome.com/
+      avatar: https://www.ithome.com/favicon.ico
+      descr: 快速播报科技行业新闻头条快讯和手机数码产品评测，关注智能车电动车、AR/VR虚拟现实、苹果iOS/iPadOS、鸿蒙OS、谷歌Android、微软Win11/Win10/Win7，紧盯iPhone/iPad、安卓智能设备手机等数码潮流。
+    - name: 快科技
+      link: https://www.mydrivers.com/
+      avatar: https://www.mydrivers.com/contact/img/kkj_logo.png
+      descr: 集资讯、产品、图赏、视频、电商、新媒体、线下活动于一体的全能型传播推广平台。
+    - name: 太平洋电脑
+      link: https://www.pconline.com.cn/
+      avatar: https://www1.pconline.com.cn/2023/cms/home/images/pconline_logo.png
+      descr: 为国内IT企业与终端用户提供全面、权威、专业的IT资讯服务。
 
-- class_name: 網站
-  class_desc: 值得推薦的網站
+- class_name: 影视娱乐
+  class_desc: 影视娱乐
   link_list:
-    - name: Youtube
-      link: https://www.youtube.com/
-      avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png
-      descr: 視頻網站
-    - name: Weibo
-      link: https://www.weibo.com/
-      avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png
-      descr: 中國最大社交分享平台
-    - name: Twitter
-      link: https://twitter.com/
-      avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png
-      descr: 社交分享平台
+    - name: 豆瓣电影
+      link: https://movie.douban.com/
+      avatar: https://img1.doubanio.com/favicon.ico
+      descr: 国内最权威影视评分
+    - name: 6V电影
+      link: https://www.hao6v.me/
+      avatar: https://www.hao6v.me/images/logo.gif
+      descr: 提供最新影视下载链接
+    - name: 电影天堂
+      link: https://www.dyttcn.com/
+      avatar: https://www.dyttcn.com/images/logo.gif
+      descr: 提供最新影视下载链接
