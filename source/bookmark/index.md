@@ -9,3 +9,8 @@ layout: "bookmark"
 - [网页版](./bookmark.html)
 
 - [手机版](./bookmark_m.html)
+
+url_for(返回一个带有根路径前缀的URL): {% url_for blog index.html %}
+full_url_for(返回一个以 config.url 为前缀的URL): {% full_url_for index /a/path %}
+
+

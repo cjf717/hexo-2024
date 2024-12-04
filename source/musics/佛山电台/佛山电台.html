@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.staticfile.net/aplayer/1.10.1/APlayer.min.css">
+  <title>佛山电台播放器</title>
+</head>
+
+<body>
+  <div>
+    <a href="https://www.radiofoshan.com.cn/hsjp/" target="_blank" rel="noopener noreferrer">
+      <img src="https://img.radiofoshan.com.cn/site/1/pc/huasheng/img/ic_index.png" alt="佛山电台">
+      佛山电台官方网站
+    </a>
+  </div>
+  <div id="aplayer"></div>
+  <script src="https://cdn.staticfile.net/hls.js/1.5.1/hls.min.js"></script>
+  <script src="https://cdn.staticfile.net/aplayer/1.10.1/APlayer.min.js"></script>
+  <script>
+    const radiofoshan = [
+      {
+        id: 41,
+        name: 'FM98.5音乐广播',
+        cover: 'fm985.png'
+      },
+      {
+        id: 42,
+        name: 'FM92.4应急/交通/南海广播',
+        cover: 'fm924.jpg'
+      },
+      {
+        id: 43,
+        name: 'FM88.3高明广播',
+        cover: 'fm883.jpg'
+      },
+      {
+        id: 44,
+        name: 'FM90.1顺德广播',
+        cover: 'fm901.jpg'
+      },
+      {
+        id: 45,
+        name: 'FM90.6三水广播',
+        cover: 'fm906.jpg'
+      },
+      {
+        id: 46,
+        name: 'FM94.6综合/禅城广播',
+        cover: 'fm946.png'
+      },
+    ]
+    const radioList = radiofoshan.map(item => ({
+      id: item.id,
+      name: item.name,
+      artist: '佛山电台',
+      url: `https://radiopull.radiofoshan.com.cn/live/1400820947_BSID_${item.id}_audio.m3u8`,
+      cover: `./cover/${item.cover}`,
+      type: 'customHls',
+    }))
+  </script>
+  <script>
+    const ap = new APlayer({
+      container: document.getElementById('aplayer'),
+      autoplay: false,
+      preload: 'none',
+      lrcType: 1,
+      audio: radioList,
+      customAudioType: {
+        'customHls': function (audioElement, audio, player) {
+          if (Hls.isSupported()) {
+            // console.log("hls方式播放1");
+            const hls = new Hls();
+            hls.loadSource(audio.url);
+            hls.attachMedia(audioElement);
+          }
+          else if (audioElement.canPlayType('application/x-mpegURL') || audioElement.canPlayType('application/vnd.apple.mpegURL')) {
+            // console.log("hls方式播放2");
+            audioElement.src = audio.url;
+          }
+          else {
+            player.notice('Error: HLS is not supported.');
+          }
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>

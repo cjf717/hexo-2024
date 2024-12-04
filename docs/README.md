@@ -43,3 +43,9 @@ git push gitlab main
 - gitee 官网：https://gitee.com/immyw/hexo-theme-butterfly
 ### 入门文章
 《hexo+github搭建博客(超级详细版，精细入微)》，https://blog.csdn.net/victoryxa/article/details/103733655
+
+## 上传
+
+```
+rsync -avz --chmod=755 --delete -e 'D:\tools\cwrsync_6.2.12_x64_free\bin\ssh.exe -p 38220 -i ~/.ssh/id_ed25519' public/ jeff@8.134.209.242:/var/www/html/hexo-2024/
+```

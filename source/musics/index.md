@@ -1,10 +1,17 @@
 ---
 title: musics
 date: 2024-11-20 10:33:10
+excerpt: "这是音乐播放器首页"
 type: "musics"
 layout: "musics"
 aplayer: true
 ---
+
+## 播放器列表
+- [佛山电台](./佛山电台/佛山电台.html)
+- [meting接口及播放器](./播放器/meting接口.html)
+- [aplayer播放器](./播放器/aplayer播放器.html)
+- [自定义播放器](./播放器/自定义播放器.html)
 
 ## 基本参数
 ```

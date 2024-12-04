@@ -1,12 +1,3 @@
----
-title: metingJs音乐播放器接口API
-tags:
-- 播放器
-date: 2024-11-26 13:02:59
-# aplayer: true
-disableNunjucks: true
----
-
 <!DOCTYPE html>
 <html lang="zh-cn">
 
@@ -17,9 +8,12 @@ disableNunjucks: true
   <link rel="stylesheet" href="https://cdn.staticfile.net/aplayer/1.10.1/APlayer.min.css">
   <title>metingJs音乐播放器接口</title>
   <style>
+    h3,
+    h4,
     h5 {
       margin: 0;
     }
+
     .form {
       margin: 5px 3px;
       border: 1px solid #e2e2e2;
@@ -30,6 +24,7 @@ disableNunjucks: true
       line-height: 2;
       text-align: right;
     }
+
     .card {
       display: flex;
       margin: 5px 3px;
@@ -39,13 +34,16 @@ disableNunjucks: true
       overflow: hidden;
       max-width: 375px;
     }
+
     .album {
       width: 150px;
       height: 150px;
     }
+
     .cover {
       width: inherit;
     }
+
     .content {
       flex: 1;
       padding: 5px;
@@ -54,14 +52,17 @@ disableNunjucks: true
       overflow: hidden;
       text-overflow: ellipsis;
     }
+
     .title {
       text-align: center;
     }
+
     .playmusic {
       text-align: right;
     }
   </style>
 </head>
+
 <body>
   <div id="app">
     <div id="aplayer"></div>
@@ -95,10 +96,11 @@ disableNunjucks: true
       </div>
       <div><button @click="sumitBtn()">提交</button></div>
     </div>
+    <div class="loading" v-if="isLoading">加载中。。。</div>
     <div v-for="item in musicList" :key="item" class="card">
       <div class="album"><img class="cover" :src="item.pic" :alt="item.title"></div>
       <div class="content">
-        <h5 class="title">{{ item.title }}</h5>
+        <h4 class="title">{{ item.title }}</h4>
         <div class="author">{{ item.author }}</div>
         <div><a :href="item.url">url</a></div>
         <div><a :href="item.lrc">lrc</a></div>
@@ -117,15 +119,18 @@ disableNunjucks: true
           ap: null,
           server: "netease",
           types: "search",
-          id: "中国人",
+          id: "中国",
           musicList: null,
-          baseUrl: "https://api.i-meto.com/meting/api"
+          baseUrl: "https://api.i-meto.com/meting/api",
+          isLoading: false
         }
       },
       methods: {
         getMusic() {
+          this.isLoading = true
           axios.get(this.baseUrl, {
             "Access-Control-Allow-Origin": true,
+            // withCredentials : true,
             params: {
               server: this.server,
               type: this.types,
@@ -133,8 +138,9 @@ disableNunjucks: true
               r: Math.random()
             }
           })
-            .then(res => { console.log(res); this.musicList = res.data })
-            .catch((error) => console.log(error));
+            .then(res => this.musicList = res.data)
+            .catch(err => console.log(error))
+            .finally(() => this.isLoading = false)
         },
         sumitBtn() {
           // console.log("点击了按钮", this.id, this.server, this.types)
@@ -149,31 +155,33 @@ disableNunjucks: true
             cover: music.pic,
             lrc: music.lrc
           }]);
-          console.log(this.ap.list.audios.length);
+          // console.log(this.ap.list.audios.length);
           this.ap.list.switch(this.ap.list.audios.length - 1)
           this.ap.play()
         }
       },
       mounted() {
-        console.log("mounted")
+        // console.log("mounted")
         this.ap = new APlayer({
           container: document.getElementById('aplayer'),
           preload: "none",
+          fixed: true,
           audio: [{
             name: '怀集音乐之声',
             artist: '蜻蜓FM',
             url: 'https://lhttp.qingting.fm/live/4804/64k.mp3',
-            cover: '/hexo-2024/cover.jpg'
+            cover: '/hexo-2024/asset/img/site_logo/fm0758.png'
           },
           {
             name: '羊城交通台',
             artist: '蜻蜓FM',
             url: 'https://lhttp.qtfm.cn/live/1262/64k.mp3',
-            cover: '/hexo-2024/cover.jpg'
+            cover: '/hexo-2024/asset/img/site_logo/fm1052.png'
           },]
         });
       }
     }).mount('#app')
   </script>
 </body>
+
 </html>

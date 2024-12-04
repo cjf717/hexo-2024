@@ -23,7 +23,6 @@ menu:
   归档: /archives/ || fas fa-archive
   列表||fas fa-list:
     音乐: /musics/ || fas fa-music
-    音乐播放器: /musics/meting音乐播放器接口.html || fas fa-music
     电影: /movies/ || fas fa-video
     图库: /gallery-group/ || fas fa-video
     相册: /gallery/ || fas fa-video
