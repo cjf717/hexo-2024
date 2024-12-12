@@ -45,7 +45,7 @@ git push gitlab main
 《hexo+github搭建博客(超级详细版，精细入微)》，https://blog.csdn.net/victoryxa/article/details/103733655
 
 ## 上传
-
+- 更新到服务器
 ```
 rsync -avz --chmod=755 --delete -e 'D:\tools\cwrsync_6.2.12_x64_free\bin\ssh.exe -p 38220 -i ~/.ssh/id_ed25519' public/ jeff@8.134.209.242:/var/www/html/hexo-2024/
 ```

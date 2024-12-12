@@ -45,20 +45,32 @@
     }
 
     .content {
+      position: relative;
       flex: 1;
       padding: 5px;
       box-sizing: border-box;
+      line-height: 1.5;
+    }
+
+    .title {
+      text-align: center;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
     }
 
-    .title {
-      text-align: center;
+    .author {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
     }
 
     .playmusic {
-      text-align: right;
+      /* text-align: right; */
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
     }
   </style>
 </head>
@@ -102,8 +114,8 @@
       <div class="content">
         <h4 class="title">{{ item.title }}</h4>
         <div class="author">{{ item.author }}</div>
-        <div><a :href="item.url">url</a></div>
-        <div><a :href="item.lrc">lrc</a></div>
+        <div><a :href="item.url">url地址</a></div>
+        <div><a :href="item.lrc">lrc歌词</a></div>
         <div class="playmusic"><button @click="playMusic(item)">播放</button></div>
       </div>
     </div>
@@ -120,7 +132,7 @@
           server: "netease",
           types: "search",
           id: "中国",
-          musicList: null,
+          musicList: [],
           baseUrl: "https://api.i-meto.com/meting/api",
           isLoading: false
         }
@@ -170,13 +182,13 @@
             name: '怀集音乐之声',
             artist: '蜻蜓FM',
             url: 'https://lhttp.qingting.fm/live/4804/64k.mp3',
-            cover: '/hexo-2024/asset/img/site_logo/fm0758.png'
+            cover: '../../asset/img/site_logo/fm0758.png'
           },
           {
             name: '羊城交通台',
             artist: '蜻蜓FM',
             url: 'https://lhttp.qtfm.cn/live/1262/64k.mp3',
-            cover: '/hexo-2024/asset/img/site_logo/fm1052.png'
+            cover: '../../asset/img/site_logo/fm1052.png'
           },]
         });
       }
